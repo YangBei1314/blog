@@ -1,0 +1,468 @@
+[ 2018-07-27T13:46:03+08:00 ] 192.168.40.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001503s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001583s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0218s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0145s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0241s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0005s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0216s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0007s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0006s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0249s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0005s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000199s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000308s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.071304s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.071452s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.002054s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002243s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.003921s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004242s ]
+
+[ 2018-07-27T13:54:15+08:00 ] 192.168.182.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000385s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000514s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000556s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0056s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0052s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0062s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0002s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000076s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000162s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011561s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011639s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000573s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000627s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001105s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001192s ]
+
+[ 2018-07-27T13:54:21+08:00 ] 192.168.182.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000007s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000360s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000476s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000517s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0063s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0048s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0057s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0046s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0002s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0046s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008983s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009032s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000383s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000416s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000820s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000883s ]
+
+[ 2018-07-27T13:54:22+08:00 ] 192.168.182.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000008s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000354s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0050s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0044s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0045s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0002s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0043s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000070s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006969s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007016s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000263s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000295s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000704s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000760s ]
+
+[ 2018-07-27T14:11:21+08:00 ] 192.168.182.62 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000611s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001059s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001132s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0093s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0080s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0070s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0002s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000052s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000091s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009306s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009382s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.001045s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001115s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001806s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001986s ]
+
+[ 2018-07-27T14:13:55+08:00 ] 192.168.182.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000017s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000419s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000499s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0053s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0049s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0045s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0044s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0002s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000048s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000079s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007336s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007384s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000324s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000348s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000619s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000659s ]
+
+[ 2018-07-27T14:13:58+08:00 ] 192.168.182.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000009s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000341s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000465s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000509s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0055s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0054s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0053s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0002s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0050s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000050s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000092s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.006886s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006928s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000250s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000281s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000539s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000583s ]
+
+[ 2018-07-27T14:14:11+08:00 ] 192.168.182.62 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000620s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000895s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000964s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0078s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0079s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0062s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0002s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000039s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007201s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007239s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000277s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000311s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000475s ]
+
+[ 2018-07-27T14:15:30+08:00 ] 192.168.182.62 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000027s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000684s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000686s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000739s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0051s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0045s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0056s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0040s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0001s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000057s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000102s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.008584s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008632s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000297s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000520s ]
+
+[ 2018-07-27T14:15:44+08:00 ] 192.168.182.62 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001095s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001466s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001566s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0068s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0068s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0052s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0045s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0002s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0041s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000071s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007483s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007530s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000271s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000293s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000471s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000510s ]
+
+[ 2018-07-27T14:15:57+08:00 ] 192.168.182.90 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000019s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000332s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000484s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0048s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0007s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0048s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0049s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0001s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0044s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007149s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007186s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000589s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000630s ]
+
+[ 2018-07-27T14:16:35+08:00 ] 192.168.182.62 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000030s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001397s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000950s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001022s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0082s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0078s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0073s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0003s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000040s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000073s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007052s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007098s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000291s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000472s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000513s ]
+
+[ 2018-07-27T14:16:44+08:00 ] 192.168.182.62 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000032s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000891s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001093s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001194s ]
+NOTIC: [2] Declaration of Home\Controller\IndexController::show() should be compatible with Think\Controller::show($content, $charset = '', $contentType = '', $prefix = '') G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 194 行.
+NOTIC: [8] Undefined index: category_id G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 37 行.
+NOTIC: [8] Undefined index: title G:\itcast\exercise\ThinkPHP3\Application\Home\Controller\IndexController.class.php 第 40 行.
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0069s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `article` LIMIT 1   [ RunTime:0.0002s ]
+SQL: SHOW COLUMNS FROM `article` [ RunTime:0.0067s ]
+NOTIC: [2] Invalid argument supplied for foreach() G:\itcast\exercise\ThinkPHP3\ThinkPHP\Library\Think\Db\Driver.class.php 第 504 行.
+SQL: SELECT article.*,`username`,`classname` FROM `article` left join user on article.user_id=user.id left join category on article.category_id=category.id  LIMIT 0,5   [ RunTime:0.0004s ]
+SQL: SHOW COLUMNS FROM `category` [ RunTime:0.0065s ]
+SQL: SELECT * FROM `category`  [ RunTime:0.0003s ]
+SQL: SHOW COLUMNS FROM `comment` [ RunTime:0.0047s ]
+SQL: SELECT `username`,comment.addate as addate,`content` FROM `comment` left join user on user.id=comment.user_id  LIMIT 5   [ RunTime:0.0002s ]
+SQL: select date_format(from_unixtime(addate),'%Y年%m月') as addate1,count(addate) as article_count from article group by addate1 [ RunTime:0.0001s ]
+SQL: SHOW COLUMNS FROM `links` [ RunTime:0.0042s ]
+SQL: SELECT * FROM `links`  [ RunTime:0.0002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000038s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000072s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.005938s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005974s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000203s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000237s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000447s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000478s ]
+
